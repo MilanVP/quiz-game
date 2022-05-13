@@ -1,0 +1,144 @@
+<!--
+    Name:           Milankumar Vinubhai Prajapati, 000813839
+    Date created:   December 8, 2020
+    Description:    This html file will display a form that will 
+                    take user's name, age and favourite color.
+                    As user submits the form a game will show up
+                    using the submitted information in form.
+                    User will play game and see the result.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script src="js/game.js"></script>
+    <style>
+        body {
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input, select {
+            font-size: 25px;
+        }
+
+        #container {
+            margin: auto;
+            text-align: center;
+            width: 800px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="form_container">
+            <h1>Please fill the form below to enter the game.</h1>
+            <form id="my_form">
+                <br><input type="text" name="name" id="name" placeholder="Enter your name" required><br><br>
+                <input type="number" name="age" id="age" placeholder="Enter your age" required><br><br>
+                <label>Select color:</label>
+                <select name="color" id="colorname">
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                    <option>Violet</option>
+                    <option selected="">Black</option>
+                </select><br><br>
+                <input type="submit" value="Play" id="submit_button">
+            </form>
+        </div>
+
+        <div id="game_container" style="display: none;">
+
+            <h1 id="welcome"></h1>
+
+            <form id="my_game">
+
+                <h2 id="question_no_1"></h2>
+                <p id="question_1"></p>
+
+                <input type="radio" id="o11" name="options_1" value="option_11">
+                <label for="o11" id="option_11"></label>
+
+                <input type="radio" id="o12" name="options_1" value="option_12">
+                <label for="o12" id="option_12"></label>
+
+                <input type="radio" id="o13" name="options_1" value="option_13">
+                <label for="o13" id="option_13"></label>
+
+
+                <h2 id="question_no_2"></h2>
+                <p id="question_2"></p>
+
+                <input type="radio" id="o21" name="options_2" value="option_21">
+                <label for="o21" id="option_21"></label>
+
+                <input type="radio" id="o22" name="options_2" value="option_22">
+                <label for="o22" id="option_22"></label>
+
+                <input type="radio" id="o23" name="options_2" value="option_23">
+                <label for="o23" id="option_23"></label>
+
+
+                <h2 id="question_no_3"></h2>
+                <p id="question_3"></p>
+
+                <input type="radio" id="o31" name="options_3" value="option_31">
+                <label for="o31" id="option_31"></label>
+
+                <input type="radio" id="o32" name="options_3" value="option_32">
+                <label for="o32" id="option_32"></label>
+
+                <input type="radio" id="o33" name="options_3" value="option_33">
+                <label for="o33" id="option_33"></label>
+
+
+                <h2 id="question_no_4"></h2>
+                <p id="question_4"></p>
+
+                <input type="radio" id="o41" name="options_4" value="option_41">
+                <label for="o41" id="option_41"></label>
+
+                <input type="radio" id="o42" name="options_4" value="option_42">
+                <label for="o42" id="option_42"></label>
+
+                <input type="radio" id="o43" name="options_4" value="option_43">
+                <label for="o43" id="option_43"></label>
+
+
+                <h2 id="question_no_5"></h2>
+                <p id="question_5"></p>
+
+                <input type="radio" id="o51" name="options_5" value="option_51">
+                <label for="o51" id="option_51"></label>
+
+                <input type="radio" id="o52" name="options_5" value="option_52">
+                <label for="o52" id="option_52"></label>
+
+                <input type="radio" id="o53" name="options_5" value="option_53">
+                <label for="o53" id="option_53"></label>
+
+                <br><br>
+
+                <input type="submit" value="Submit" id="next_button">
+
+            </form>
+
+
+        </div>
+        <div id="end_container" style="display: none;">
+            <p>Your score is <span id="score"></span> out of 5</p>
+            <br>
+            <p>Click <a href="index.html">here</a> to play again</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
